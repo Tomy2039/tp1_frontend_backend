@@ -7,7 +7,7 @@ app.use(cors())
 
 app.get('/saludo/:nombre', (req, res) => {
     const nombre = req.params.nombre;
-    res.send(`Bienvenido ${nombre}!`);
+    res.send(`Hola, ${nombre}!`);
 });
 
 app.listen(port, () => {
